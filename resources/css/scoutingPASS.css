@@ -12,7 +12,7 @@ html, body{
     margin: 0;
     padding: 0;
     color: white;
-    background-color: maroon;
+    background-color: #3b0009;
 }
 
 #prematch_table, #postmatch_table {
@@ -34,13 +34,13 @@ html, body{
     font-style: bold;
     letter-spacing: 1px;
     border-width: 4px;
-    border-color: maroon;
+    border-color: #3b0009;
 }
 
 
 #autonHeader, #endgameHeader, #teleopHeader1, #teleopHeader2{
     color: black;
-    border-color: maroon;
+    border-color: #3b0009;
     border-width: 4px;
 }
 
