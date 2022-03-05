@@ -39,7 +39,7 @@ html, body{
 
 
 #autonHeader, #endgameHeader, #teleopHeader1, #teleopHeader2{
-    color: black;
+    color: #383838;
     border-color: #3b0009;
     border-width: 4px;
 }
@@ -56,7 +56,7 @@ html, body{
 }
 
 #qrHeader1, #qrHeader2 {
-    color: black;
+    color: #383838;
 }
     
 .field-image {
