@@ -29,7 +29,7 @@ html, body{
 
 #auton_table, #endgame_table, #teleop_table {
     font-family : -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-    color: black;
+    color: white;
     font-size: 13px;
     font-style: bold;
     letter-spacing: 1px;
@@ -39,7 +39,7 @@ html, body{
 
 
 #autonHeader, #endgameHeader, #teleopHeader1, #teleopHeader2{
-    color: #383838;
+    color: white;
     border-color: #3b0009;
     border-width: 4px;
 }
@@ -56,7 +56,7 @@ html, body{
 }
 
 #qrHeader1, #qrHeader2 {
-    color: #383838;
+    color: black;
 }
     
 .field-image {
