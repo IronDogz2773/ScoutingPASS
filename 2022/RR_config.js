@@ -154,24 +154,24 @@ var config_data = `
         "title": "Driver Skill",
         "type":"radio",
         "choices":{
-          "n":"Not Effective<br>",
-          "a":"Average<br>",
-          "v":"Very Effective<br>",
-          "x":"Not Observed"
+          "1":"Not Effective<br>",
+          "2":"Average<br>",
+          "3":"Effective<br>",
+          "4":"Very Effective"
         },
-        "defaultValue":"x"
+        "defaultValue":"1"
       },
       "Defense Rating": {
         "code":"dr",
         "title": "Defense Rating",
         "type":"radio",
         "choices":{
-          "n":"Not Effective<br>",
-          "a":"Average<br>",
-          "v":"Very Effective<br>",
-          "x":"Not Observed"
+          "1":"Not Effective<br>",
+          "2":"Average<br>",
+          "3":"Very Effective<br>",
+          "0":"Not Observed"
         },
-        "defaultValue":"x"
+        "defaultValue":"0"
       },
       "Shot enemy balls away?": {
         "code":"ba",
@@ -185,7 +185,7 @@ var config_data = `
       },
       "Card Foul": {
         "code":"cf",
-        "title": "Yellow/Red Card",
+        "title": "Yellow/Red Carded?",
         "type":"bool"
       },
       "Comments": {
@@ -197,12 +197,14 @@ var config_data = `
       },
       "Confidence Rating": {
         "code":"cnf",
-        "title": "Confidence Rating",
+        "title": "Team Rating",
         "type":"radio",
         "choices":{
-          "v":"Very Confident<br>",
-          "a":"Average<br>",
-          "n":"Not Confident"
+          "6":"Excellent Team<br>",
+          "5":"Good Team<br>",
+          "3":"Average Team<br>",
+          "2":"Medicore Team<br>",
+          "0":"Do Not Pick"
       },
        "defaultValue":"a"
     }
