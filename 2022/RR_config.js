@@ -56,6 +56,12 @@ var config_data = `
         "type":"team",
         "min":1,
         "max":99999
+      },
+      "Auto Start Position": {
+        "code":"as",
+        "title": "Auto Start Position",
+        "type":"field_image",
+        "filename":"2022/field_image.png"
       }
     },
     "auton": {
@@ -96,11 +102,28 @@ var config_data = `
         "title": "Was Defended",
         "type":"bool"
       },
+      "Wallbot?": {
+        "code":"wbt",
+        "title": "Wallbot?",
+        "type":"bool"
+      },
+      "Cargo Intake From": {
+        "code":"cif",
+        "title": "Cargo Intake From",
+        "type":"radio",
+        "choices":{
+          "t":"Terminal<br>",
+          "g":"Ground<br>",
+          "b":"Both<br>",
+          "x":"Not Attempted"
+        },
+        "defaultValue":"x"
+      },
       "Shooting Spot": {
         "code":"ss",
         "title": "Shooting Spot",
         "type":"field_image",
-        "filename":"scoutingpass/field_image.png"
+        "filename":"2022/field_image.png"
       }
     },
     "endgame": {
@@ -137,7 +160,7 @@ var config_data = `
         "title": "Started climb before EndGame",
         "type":"bool"
       },
-      "Number Of Robots On Rungs In Alliance": {
+      "Num of Robots Climbed": {
         "code":"cn",
         "title": "# of alliance bots climbed",
         "type":"counter"
@@ -168,18 +191,6 @@ var config_data = `
         },
         "defaultValue":"x"
       },
-       "Offense Rating": {
-        "code":"or",
-        "title": "Offense Rating",
-        "type":"radio",
-        "choices":{
-          "n":"Not Effective<br>",
-          "a":"Average<br>",
-          "v":"Very Effective<br>",
-          "x":"Not Observed"
-        },
-        "defaultValue":"x"
-      },
       "Shot enemy balls away?": {
         "code":"ba",
         "title": "Shot enemy balls away?",
@@ -195,6 +206,11 @@ var config_data = `
         "title": "Yellow/Red Card",
         "type":"bool"
       },
+      "Make good alliance partner?": {
+        "code":"all",
+        "title": "Make good alliance partner?",
+        "type":"bool"
+      },
       "Comments": {
         "code":"co",
         "title": "Comments",
@@ -202,21 +218,16 @@ var config_data = `
         "size":15,
         "maxSize":50
       },
-      "Match Performance": {
-        "code":"mp",
-        "title": "Performance Rating",
+      "Confidence Rating": {
+        "code":"cnf",
+        "title": "Confidence Rating",
         "type":"radio",
         "choices":{
-          "1":"Do Not Pick<br>",
-          "2":"Poor Performance<br>",
-          "3":"Average Performance<br>",
-          "4":"Good Performance<br>",
-          "3":"Niche Performance<br>",
-          "5":"Amazing Performance<br>"
-          
+          "v":"Very Confident<br>",
+          "a":"Average<br>",
+          "n":"Not Confident"
       },
-       "defaultValue":"0",
-       "required":"true"
+       "defaultValue":"a"
     }
     }
   }
