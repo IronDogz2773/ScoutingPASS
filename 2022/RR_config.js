@@ -56,12 +56,6 @@ var config_data = `
         "type":"team",
         "min":1,
         "max":99999
-      },
-      "Auto Start Position": {
-        "code":"as",
-        "title": "Auto Start Position",
-        "type":"field_image",
-        "filename":"2022/field_image.png"
       }
     },
     "auton": {
@@ -102,9 +96,9 @@ var config_data = `
         "title": "Was Defended",
         "type":"bool"
       },
-      "Wallbot?": {
-        "code":"wbt",
-        "title": "Wallbot?",
+      "Defending": {
+        "code":"def",
+        "title": "Defending?",
         "type":"bool"
       },
       "Cargo Intake From": {
