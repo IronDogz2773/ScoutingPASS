@@ -28,15 +28,13 @@ var config_data = `
           "sf":"Semi-Final<br>",
           "f":"Final"
         },
-        "defaultValue":"qm",
-        "required":"true"
+        "defaultValue":"qm"
       },
       "Match #":{
         "code":"m",
         "type":"match",
         "min":1,
         "max":100,
-        "required":"true"
       },
      "Robot": {
         "code":"r",
