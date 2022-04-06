@@ -96,9 +96,9 @@ var config_data = `
         "title": "Was Defended",
         "type":"bool"
       },
-      "Defending": {
-        "code":"def",
-        "title": "Defending?",
+      "Wallbot?": {
+        "code":"wbt",
+        "title": "Wallbot?",
         "type":"bool"
       },
       "Cargo Intake From": {
