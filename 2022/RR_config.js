@@ -96,22 +96,10 @@ var config_data = `
         "title": "Was Defended",
         "type":"bool"
       },
-      "Wallbot?": {
-        "code":"wbt",
-        "title": "Wallbot?",
+      "Was Defending": {
+        "code":"def",
+        "title": "Was Defending?",
         "type":"bool"
-      },
-      "Cargo Intake From": {
-        "code":"cif",
-        "title": "Cargo Intake From",
-        "type":"radio",
-        "choices":{
-          "t":"Terminal<br>",
-          "g":"Ground<br>",
-          "b":"Both<br>",
-          "x":"Not Attempted"
-        },
-        "defaultValue":"x"
       },
       "Shooting Spot": {
         "code":"ss",
@@ -198,11 +186,6 @@ var config_data = `
       "Card Foul": {
         "code":"cf",
         "title": "Yellow/Red Card",
-        "type":"bool"
-      },
-      "Make good alliance partner?": {
-        "code":"all",
-        "title": "Make good alliance partner?",
         "type":"bool"
       },
       "Comments": {
